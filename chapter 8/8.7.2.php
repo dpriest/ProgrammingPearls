@@ -6,20 +6,20 @@ $x = $dataIns->provide($n);
 $algorithmIns = new MaxSumAlgorithm($n, $x);
 $start = time();
 
-// $result = $algorithmIns->simpleAlgorithm();
-// $used = time() - $start;
-// $start = time();
-// echo "algorithm 1:{$result}, {$used}\n";
+$result = $algorithmIns->simpleAlgorithm();
+$used = time() - $start;
+$start = time();
+echo "algorithm 1:{$result}, {$used}\n";
 
-// $result = $algorithmIns->quadraticAlgorithm();
-// $used = time() - $start;
-// $start = time();
-// echo "algorithm 2:{$result}, {$used}\n";
+$result = $algorithmIns->quadraticAlgorithm();
+$used = time() - $start;
+$start = time();
+echo "algorithm 2:{$result}, {$used}\n";
 
-// $result = $algorithmIns->divideConquerAlgorithm(0, $n-1);
-// $used = time() - $start;
-// $start = time();
-// echo "algorithm 3:{$result}, {$used}\n";
+$result = $algorithmIns->divideConquerAlgorithm(0, $n-1);
+$used = time() - $start;
+$start = time();
+echo "algorithm 3:{$result}, {$used}\n";
 
 $result = $algorithmIns->scanningAlgorithm();
 $used = time() - $start;
